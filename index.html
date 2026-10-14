@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Clinic | Township Lahore</title>
+  <style>
+    :root {
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --secondary: #10b981;
+      --dark: #1e293b;
+      --light: #f8fafc;
+      --card-bg: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+    
+    header { background: white; border-bottom: 2px solid #e2e8f0; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+    .logo-area h1 { font-size: 1.5rem; color: var(--primary); }
+    .logo-area p { font-size: 0.85rem; color: #64748b; }
+    .nav-btn { background: var(--secondary); color: white; padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+
+    .hero { text-align: center; padding: 3rem 1.5rem; background: linear-gradient(135deg, #e0f2fe, #f0fdf4); }
+    .hero h2 { font-size: 2.2rem; color: var(--dark); margin-bottom: 0.8rem; }
+    .hero p { font-size: 1.1rem; color: #475569; max-width: 650px; margin: 0 auto 1.5rem; }
+    .badge-bar { display: inline-flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-bottom: 1.5rem; }
+    .badge { background: #0284c7; color: white; padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600; }
+    .badge.green { background: #16a34a; }
+
+    .container { max-width: 1100px; margin: 2rem auto; padding: 0 1.5rem; }
+    .section-title { text-align: center; font-size: 1.8rem; color: var(--primary-dark); margin-bottom: 1.5rem; }
+
+    /* Doctor Card */
+    .doctor-card { background: white; border-radius: 12px; padding: 1.8rem; box-shadow: 0 4px 15px rgba(0,0,0,0.06); border-left: 5px solid var(--primary); margin-bottom: 2.5rem; display: flex; flex-direction: column; gap: 1rem; }
+    .doc-header h3 { font-size: 1.4rem; color: var(--dark); }
+    .doc-spec { color: var(--primary); font-weight: 600; font-size: 1rem; }
+    .doc-qual { font-size: 0.9rem; color: #64748b; margin-top: 0.2rem; }
+    .doc-details { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 0.8rem; background: #f8fafc; padding: 1rem; border-radius: 8px; }
+    .detail-item strong { display: block; color: var(--dark); font-size: 0.85rem; }
+    .detail-item span { color: #334155; font-size: 0.95rem; }
+
+    /* Services Grid */
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem; }
+    .card { background: white; border-radius: 10px; padding: 1.5rem; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+    .card h4 { color: var(--primary); font-size: 1.2rem; margin-bottom: 0.5rem; }
+    .card ul { list-style: none; }
+    .card ul li { padding: 0.4rem 0; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; color: #475569; }
+
+    /* Contact Section */
+    .contact-box { background: #0f172a; color: white; border-radius: 12px; padding: 2rem; text-align: center; }
+    .contact-box h3 { font-size: 1.5rem; margin-bottom: 1rem; color: #38bdf8; }
+    .contact-links { display: flex; flex-direction: column; gap: 0.8rem; align-items: center; margin-top: 1.2rem; }
+    .btn-call { background: var(--secondary); color: white; padding: 0.8rem 1.8rem; border-radius: 30px; text-decoration: none; font-weight: bold; display: inline-block; font-size: 1rem; }
+
+    footer { text-align: center; padding: 2rem; color: #94a3b8; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-area">
+      <h1>MC CLINIC</h1>
+      <p>Your Health Is Our Priority</p>
+    </div>
+    <a href="https://wa.me/923064747100" class="nav-btn" target="_blank">Book Appointment</a>
+  </header>
+
+  <section class="hero">
+    <div class="badge-bar">
+      <span class="badge">Supervised by Senior Professors</span>
+      <span class="badge green">Free Sehat Card Facility Available</span>
+    </div>
+    <h2>Modern Healthcare & Diagnostic Services</h2>
+    <p>Comprehensive outpatient care, digital diagnostics, pharmacy, and specialist consultations under one roof in Township, Lahore.</p>
+    <a href="https://wa.me/923064747100" class="btn-call" target="_blank">Contact via WhatsApp</a>
+  </section>
+
+  <div class="container">
+
+    <!-- Featured Doctor Section -->
+    <h3 class="section-title">Consultant Doctor</h3>
+    <div class="doctor-card">
+      <div class="doc-header">
+        <h3>DR. ALI HAMZA ARSHAD</h3>
+        <p class="doc-spec">Consultant Paediatrician</p>
+        <p class="doc-qual">MBBS, MD Paediatrics | Ex-Registrar, Children's Hospital, Lahore</p>
+      </div>
+      <div class="doc-details">
+        <div class="detail-item">
+          <strong>OPD Timings</strong>
+          <span>6:00 PM – 12:00 AM (Wed Off)</span>
+        </div>
+        <div class="detail-item">
+          <strong>Emergency Care</strong>
+          <span>2:00 PM – 6:00 PM</span>
+        </div>
+        <div class="detail-item">
+          <strong>Consultation Fee</strong>
+          <span>Rs. 500</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Diagnostic & Emergency Services -->
+    <h3 class="section-title">Clinical & Diagnostic Facilities</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Diagnostic Center</h4>
+        <ul>
+          <li>Clinical Laboratory & Blood Testing</li>
+          <li>Free Home Blood Sample Collection</li>
+          <li>Ultrasound (Advanced Imaging)</li>
+          <li>ECG (Heart Monitoring)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4>Specialist Consultations</h4>
+        <ul>
+          <li>Child Specialist & Paediatrics</li>
+          <li>Gynecologist & Obstetric Care</li>
+          <li>Cardiology & Heart Care</li>
+          <li>Orthopedic & Joint Care</li>
+          <li>Skin Specialist (Dermatology)</li>
+          <li>Dental Surgeon & ENT Clinic</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4>Patient Support & Pharmacy</h4>
+        <ul>
+          <li>Emergency Medical Services</li>
+          <li>Fully Stocked Pharmacy</li>
+          <li>Diabetes, BP & Cholesterol Monitoring</li>
+          <li>Special Concessions for Deserving Patients</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contact & Location -->
+    <div class="contact-box">
+      <h3>Visit or Contact Muhammad Clinic</h3>
+      <p>Building # 461-3-C1, Umar Chowk, Near Mehrab Juice Corner, Township, Lahore</p>
+      <div class="contact-links">
+        <p><strong>Phones:</strong> +92 306 474 7100 | +92 306 449 5238 | +92 320 999 2099</p>
+        <p><strong>Email:</strong> mcclinic999@gmail.com</p>
+        <a href="https://wa.me/923064747100" class="btn-call" target="_blank">Chat Directly on WhatsApp</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; Muhammad Clinic Township Lahore. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
